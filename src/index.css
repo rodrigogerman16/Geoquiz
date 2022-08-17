@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
+
 
 body {
   margin: 0;
@@ -11,6 +12,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(192,192,192);
 }
 
 code {
@@ -24,16 +26,25 @@ code {
   flex-direction: column;
 }
 
+
+/*------------------- Index -------------------*/
 .Index,.Game {
   position: relative;
   display: block;
-  background-color: rgba(54, 33, 172, 0.2);
+  background-color: white;
   padding: 15px 25px;
   text-align: center;
+  height: fit-content;
+  width: fit-content;
+  border: solid;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10%;
 }
 
 .Index .Howtoplay  {
   padding: 15px;
+  margin-top: 10%;
 }
 
 .Index .Startbtn {
@@ -43,12 +54,38 @@ code {
   border-radius: 15px;
   width: 30%;
   cursor: pointer;
+  margin-top: 10%;
 }
 
+/*------------------- Game -------------------*/
 .Game button {
   background: transparent;
   padding: 15px;
   margin: 15px;
   border-radius: 15px;
-  width: 100%;
+  cursor: pointer;
+}
+
+.App button:hover {
+  background: rgb(0,191,255);
+  border: solid;
+  border-radius: 15px;
+  border-color: black;
+  color: white;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.Country-flag {
+  height: 100px;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.Country-flag img {  
+  border: 2px solid;
 }
